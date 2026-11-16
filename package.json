@@ -1,0 +1,30 @@
+{
+  "name": "toilet-grader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TOILET GRADER — браузерная игра: кейсы, апгрейдер, Color Dice, батлы",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && tsx server/index.ts",
+    "dev": "node scripts/build.mjs --watch & tsx watch server/index.ts",
+    "create-admin": "tsx scripts/create-admin.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx scripts/smoke-test.ts"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/ws": "^8.5.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
